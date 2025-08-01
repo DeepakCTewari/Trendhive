@@ -8,12 +8,12 @@ const Navbar = () => {
   return (
     <nav className="relative w-full">
       {/* Top Navbar */}
-      <div className="flex items-center justify-between py-5 px-6 font-medium">
+      <div className="flex items-center justify-between py-5  font-medium">
         {/* Logo */}
-        <div className="flex-shrink-0">
-          <img src={assets.logo} className="w-36 object-contain" alt="logo" />
-        </div>
-
+       
+        <Link to='/'> <img src={assets.logo} className="w-36 object-contain" alt="logo" />
+        </Link> 
+        
         {/* Desktop Nav Links */}
         <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
           {['/', '/collection', '/about', '/contact'].map((path, index) => {
